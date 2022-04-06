@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vite",
     "server": "vite preview",
+    "start": "vite preview",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview --port 5050",
     "test:unit": "vitest --environment jsdom",
