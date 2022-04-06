@@ -1,8 +1,9 @@
 {
-  "name": "test-task",
-  "version": "0.0.0",
+  "name": "plugins-test-project",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite",
+    "server": "vite preview",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview --port 5050",
     "test:unit": "vitest --environment jsdom",
