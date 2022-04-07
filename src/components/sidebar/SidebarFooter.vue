@@ -15,7 +15,7 @@
 
 <template>
   <footer
-    class="default-paddings flex justify-center items-center gap-4 flex-col md:flex-row">
+    class="py-4 flex justify-center items-center gap-4 flex-col md:flex-row sticky bottom-0 bg-neutral-200">
     <span>All plugins enabled</span>
     <toggle :value="arePluginsEnabled" @click="onToggleClick" :height="38">
       <icon-mdi :icon="mdiPower" :size="25" stroke="transparent" />
