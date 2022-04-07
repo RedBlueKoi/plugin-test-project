@@ -12,7 +12,8 @@
 
 <template>
   <aside class="app-sidebar bg-neutral-200">
-    <header class="text-5xl px-6 py-8 flex justify-start items-center">
+    <header
+      class="text-2xl md:text-5xl px-6 py-8 flex justify-start items-center">
       DataGuard
     </header>
     <nav>

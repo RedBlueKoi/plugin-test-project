@@ -9,7 +9,7 @@
 
 <template>
   <li>
-    <RouterLink :to="link" class="sidebar-item">
+    <RouterLink :to="link" class="sidebar-item default-paddings">
       <slot />
     </RouterLink>
   </li>
@@ -17,7 +17,7 @@
 
 <style scoped lang="postcss">
   .sidebar-item {
-    @apply flex justify-start items-center px-6 py-4 relative gap-4;
+    @apply flex justify-start items-center relative gap-4;
     @apply hover:bg-white transition-colors ease-in-out duration-200;
 
     &::before {

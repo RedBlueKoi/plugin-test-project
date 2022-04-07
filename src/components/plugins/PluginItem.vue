@@ -55,7 +55,8 @@
   <app-card
     class="flex flex-col justify-between gap-2 transition-opacity duration-200 ease-in-out"
     :class="{ disabled: isDisabled }">
-    <div class="flex justify-between items-start gap-4">
+    <div
+      class="flex justify-between items-start gap-2 md:gap-4 flex-col md:flex-row">
       <div class="text-lg">{{ plugin.title }}</div>
       <toggle
         :value="isPluginActive"
