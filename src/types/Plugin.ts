@@ -1,6 +1,6 @@
-export interface Plugin {
-  name: string
-  allowed: boolean
-  disabled: boolean
+interface Plugin {
+  title: string
   description: string
 }
+
+export default Plugin

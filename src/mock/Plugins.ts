@@ -1,46 +1,64 @@
-import type { Plugin } from "@/types/Plugin"
+import type Plugin from "@/types/Plugin"
 
-export const Plugins: Plugin[] = [
+const Plugins: Plugin[] = [
   {
-    name: "My first plugin",
-    allowed: false,
-    disabled: true,
+    title: "Plugin 1",
     description:
-      "Some random description. Just need some words to feel the space"
+      "Enim cillum tempor veniam do laboris excepteur laborum fugiat aute magna cillum."
   },
   {
-    name: "My second plugin",
-    allowed: true,
-    disabled: false,
+    title: "Plugin 2",
     description:
-      "Some random description. Just need some words to feel the space"
+      "Proident sunt consequat exercitation incididunt cupidatat quis ut ut eu ullamco nisi excepteur aliqua."
   },
   {
-    name: "My third plugin",
-    allowed: false,
-    disabled: false,
+    title: "Plugin 3",
     description:
-      "Some random description. Just need some words to feel the space"
+      "Amet ea quis qui reprehenderit laborum aute magna incididunt et dolore."
   },
   {
-    name: "Another plugin",
-    allowed: false,
-    disabled: false,
-    description:
-      "Some random description. Just need some words to feel the space"
+    title: "Plugin 4",
+    description: "Sunt culpa labore consequat eu veniam laborum."
   },
   {
-    name: "This plugin is disabled",
-    allowed: true,
-    disabled: true,
+    title: "Plugin 5",
     description:
-      "Some random description. Just need some words to feel the space"
+      "Proident laborum sint nisi enim non aliqua incididunt dolor voluptate tempor."
   },
   {
-    name: "Do we really need another one? Just kidding, I just need a plugin with a really long name",
-    allowed: false,
-    disabled: true,
+    title: "Plugin 6",
+    description: "Qui cillum velit elit incididunt excepteur nostrud occaecat."
+  },
+  {
+    title: "Plugin 7",
     description:
-      "Some random description. Just need some words to feel the space"
+      "Culpa excepteur aliquip adipisicing sunt sunt proident aute eiusmod."
+  },
+  {
+    title: "Plugin 8",
+    description: "Eiusmod ex labore cillum elit."
+  },
+  {
+    title: "Plugin 9",
+    description: "Ut sit sit fugiat qui ullamco ea ea id qui esse magna."
+  },
+  {
+    title: "Plugin 10",
+    description:
+      "Aliqua tempor nostrud occaecat enim nulla proident nostrud enim adipisicing pariatur velit."
+  },
+  {
+    title: "Plugin 11",
+    description: "Consectetur sit amet velit cillum sunt cillum sunt."
+  },
+  {
+    title: "Plugin 12",
+    description: "Exercitation in aute ut ex aliqua ea."
+  },
+  {
+    title: "Plugin 13",
+    description: "Dolor laboris culpa ipsum aliqua velit mollit."
   }
 ]
+
+export default Plugins

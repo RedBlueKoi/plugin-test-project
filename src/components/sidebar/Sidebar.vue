@@ -1,8 +1,13 @@
 <script setup lang="ts">
+  import { computed } from "vue"
   import IconMdi from "@/components/icons/IconMdi.vue"
   import SidebarItem from "./SidebarItem.vue"
-  import { mdiFinance, mdiGrid, mdiAccount } from "@mdi/js"
   import SidebarFooter from "./SidebarFooter.vue"
+  import { useMainStore } from "@/stores/main"
+
+  const mainStore = useMainStore()
+
+  const tabs = computed(() => mainStore.tabs)
 </script>
 
 <template>
@@ -11,18 +16,13 @@
       DataGuard
     </header>
     <nav>
-      <ul>
-        <sidebar-item link="marketing">
-          <icon-mdi :size="32" :icon="mdiGrid" />
-          Marketing
-        </sidebar-item>
-        <sidebar-item link="finance">
-          <icon-mdi :size="32" :icon="mdiFinance" />
-          Finance
-        </sidebar-item>
-        <sidebar-item link="personnel">
-          <icon-mdi :size="32" :icon="mdiAccount" />
-          Personnel
+      <ul v-if="tabs">
+        <sidebar-item
+          v-for="tab in tabs"
+          :key="tab.title"
+          :link="`${tab.title.toLowerCase()}`">
+          <icon-mdi :size="32" :icon="tab.icon" />
+          {{ tab.title }}
         </sidebar-item>
       </ul>
     </nav>

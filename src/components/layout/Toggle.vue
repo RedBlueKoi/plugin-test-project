@@ -19,10 +19,10 @@
 </script>
 
 <template>
-  <div class="toggle-container flex flex-col justify-center items-center">
-    <div
-      class="toggle"
-      :class="{ 'toggle-active': value, 'cursor-pointer': !disabled }">
+  <div
+    class="toggle-container flex flex-col justify-center items-center"
+    :class="{ 'cursor-pointer': !disabled }">
+    <div class="toggle" :class="{ 'toggle-active': value }">
       <div class="knob">
         <slot />
       </div>
